@@ -1,0 +1,980 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+
+:root {
+    --main-color: #eba54a;
+}
+
+* {
+    font-family: Roboto, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+    line-height: 1.5;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f7feff;
+    padding-left: 30rem;
+}
+
+section {
+    padding: 0px 52px;
+    min-height: 100vh;
+    margin-bottom: 30px;
+}
+
+.heading {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: #eba54a;
+    text-transform: uppercase;
+    margin-top: -35px;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 3rem;
+    background: var(--main-color);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: rgb(165, 198, 218);
+    letter-spacing: 0.2rem;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background: rgb(49, 49, 49);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 8rem 2rem;
+    width: 30rem;
+    text-align: center;
+}
+
+header .logo {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+header .logo span {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+header .navbar a {
+    display: block;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin: 2rem 0px;
+}
+
+header .navbar a:hover {
+    letter-spacing: 0.2rem;
+    color: var(--main-color);
+}
+
+header .follow a {
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin: 0px 0.7rem;
+}
+
+header .follow a:hover {
+    color: var(--main-color);
+}
+
+#menu-bars {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10000;
+    background: var(--main-color);
+    color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.cursor-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 1rem;
+    width: 1rem;
+    background: var(--main-color);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.cursor-1.active {
+    height: 7rem;
+    width: 7rem;
+    opacity: 0.3;
+}
+
+.cursor-2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 4rem;
+    width: 4rem;
+    border: 0.1rem solid var(--main-color);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10000;
+    transition: all 0.3s linear 0s;
+}
+
+.cursor-2.active {
+    display: none;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home .image {
+    flex: 1 1 40rem;
+    animation-timing-function: ease;
+}
+
+.home .image img {
+    width: ;
+    height: 785px;
+    object-fit: ;
+    object-position: ;
+    width: 600px;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+    animation-timing-function: ease;
+}
+
+.home .content .hi {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.home .content h3 {
+    font-size: 4.5rem;
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+}
+
+.home .content h3 span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.home .content .info {
+    font-size: 2.5rem;
+    color: rgb(17, 17, 17);
+    padding: 0.5rem 0px;
+}
+
+.home .content .text {
+    font-size: 1.7rem;
+    color: rgb(102, 102, 102);
+    padding: 0.5rem 0px;
+}
+
+.about .row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.about .row-1 .image {
+    flex: 1 1 25rem;
+}
+
+.about .row-1 .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1rem solid rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+}
+
+.about .row-1 .content {
+    flex: 1 1 50rem;
+}
+
+.about .row-1 .content h3 {
+    color: rgb(51, 51, 51);
+    font-size: 3.5rem;
+}
+
+.about .row-1 .content p {
+    color: rgb(102, 102, 102);
+    font-size: 1.7rem;
+    padding: 0.5rem 0px;
+    text-transform: ;
+    text-align: justify;
+}
+
+.about .row-1 .content .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.5rem 0px;
+}
+
+.about .row-1 .content .box-container .box {
+    flex: 1 1 20rem;
+}
+
+.about .row-1 .content .box-container .box span {
+    color: var(--main-color);
+}
+
+.about .row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row-2 .skills {
+    flex: 1 1 40rem;
+}
+
+.about .row-2 .skills .progress {
+    padding: 1rem 0px;
+}
+
+.about .row-2 .skills .progress h3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0px;
+    font-size: 1.7rem;
+    color: rgb(17, 17, 17);
+    font-weight: 400;
+}
+
+.about .row-2 .skills .progress .bar {
+    width: 100%;
+    background: rgb(204, 204, 204);
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress .bar span {
+    display: block;
+    height: 100%;
+    background: var(--main-color);
+    border-radius: 50rem;
+}
+
+.about .row-2 .skills .progress:nth-child(1) .bar span {
+    width: 95%;
+}
+
+.about .row-2 .skills .progress:nth-child(2) .bar span {
+    width: 80%;
+}
+
+.about .row-2 .skills .progress:nth-child(3) .bar span {
+    width: 75%;
+}
+
+.about .row-2 .skills .progress:nth-child(4) .bar span {
+    width: 85%;
+}
+
+.about .row-2 .box-container {
+    flex: 1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.about .row-2 .box-container .box {
+    flex: 1 1 15rem;
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+}
+
+.about .row-2 .box-container .box h3 {
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.about .row-2 .box-container .box p {
+    color: rgb(102, 102, 102);
+    font-size: 1.7rem;
+    padding-top: 0.5rem;
+}
+
+.education {
+    width: 80%;
+}
+
+.education-conent-box {
+    display: flex;
+    margin: 60px 0px;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+.left-content {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 50%;
+    position: relative;
+}
+
+.left-content>img {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+
+.right-content {
+    margin-left: 30px;
+}
+
+.right-content h1 {
+    font-size: 30px;
+}
+
+.right-content h5 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.right-content p {
+    font-size: 15px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+
+section#Skills {
+    position: relative;
+    margin-left: -49px;
+}
+
+.service .box-container {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.service .box-container .box {
+    flex: 1 1 27rem;
+    text-align: center;
+    padding: 2rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+    margin-bottom: 20px;
+    margin-right: 27px;
+    box-shadow: 7px 3px 16px 0px #333333;
+}
+
+.service .box-container .box:nth-child(3) {
+    margin-right: 0px;
+}
+
+.service .box-container .box:nth-child(6) {
+    margin-right: 0px;
+}
+
+.box {
+    height: 250px;
+    padding: 15px;
+    overflow: hidden;
+    position: relative;
+    width: 326px;
+}
+
+.box>div {
+    position: absolute;
+    left: 0px;
+    top: 400px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box img {
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+.box:hover.box>div {
+    left: 0px;
+    top: 20px;
+    transition: all 1s ease-in-out 0s;
+}
+
+.box:hover.box img {
+    left: 0px;
+    top: -400px;
+    transition: all 1s ease-in-out 0s;
+}
+
+.service .box-container .box i {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.service .box-container .box h3 {
+    color: rgb(68, 68, 68);
+    font-size: 2.2rem;
+    padding-top: 1rem;
+}
+
+.service .box-container .box p {
+    color: rgb(102, 102, 102);
+    font-size: 1.7rem;
+    padding-top: 0.5rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.left-box {
+    width: 35%;
+    height: 322px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*background-image: url("https://www.slazzer.com/static/images/home-page/individual-image-design-maker.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+}
+.design{
+    background-image: url(Images/design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+
+}
+.android{
+    background-image: url(Images/android.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+}
+.oop{
+    background-image: url(Images/oop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+}
+.photo{
+    background-image: url(Images/photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+}
+
+.left-box {
+    background-color: red;
+    margin-right: -35px;
+}
+
+.left-box button {
+    padding: 8px 22px;
+    border-radius: 4px;
+    background: rgb(134, 181, 255);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: serif;
+    text-transform: capitalize;
+    display: none;
+    transition: display 1s ease-in-out 0s;
+}
+
+.left-box:hover.left-box button {
+    display: block;
+}
+
+.left-box:hover.left-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+
+.right-box {
+    width: 60%;
+    padding: 0px 30px;
+}
+
+.right-box h1 {
+    font-size: 50px;
+}
+.right-box h2 {
+    font-size: 25px;
+    color: rgb(49, 49, 49);
+}
+
+.right-box p {
+    font-size: 16px;
+}
+
+.contact {
+    font-family: var(--pr-f);
+    width: 100%;
+}
+
+.long-image {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(37, 62, 162);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.long-image h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.long-image h1 span {
+    color: rgb(160, 246, 105);
+}
+
+.long-image a {
+    font-size: 20px;
+    color: white;
+    background: rgb(211, 47, 47);
+    padding: 3px 10px;
+    border-radius: 30px;
+    box-shadow: black 0px 0px 10px;
+    line-height: 1.8;
+    letter-spacing: 3px;
+}
+
+.long-image a:hover {
+    background: rgb(168, 38, 38);
+}
+
+.title-contact {
+    font-size: 50px;
+    margin: 100px 0px;
+    text-align: center;
+}
+
+.experience .box-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experience .box-container .box {
+    position: relative;
+    flex: 1 1 33rem;
+    border-left: 0.2rem solid var(--main-color);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.experience .box-container .box::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+.experience .box-container .box .content {
+    background: rgb(255, 255, 255);
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.experience .box-container .box .content span {
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    background: var(--main-color);
+    border-radius: 50rem;
+    padding: 0.4rem 1rem;
+}
+
+.experience .box-container .box .content h3 {
+    font-size: 2.5rem;
+    padding: 0.5rem 0px;
+    color: rgb(17, 17, 17);
+}
+
+.experience .box-container .box .content p {
+    font-size: 1.5rem;
+    color: rgb(102, 102, 102);
+}
+
+.portfolio .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.portfolio .box-container .box {
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    border: 1rem solid rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+}
+
+.portfolio .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio .box-container .box:hover img {
+    height: 75%;
+    width: 75%;
+}
+
+.portfolio .box-container .box h3 {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    font-size: 2.5rem;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+}
+
+.project-container-main {
+    min-height: 82vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.portfolio .box-container .box .icons {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    text-align: left;
+}
+
+.portfolio .box-container .box .icons a {
+    display: block;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+    background: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+    font-size: 1.7rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.portfolio .box-container .box .icons a:hover {
+    background: var(--main-color);
+    color: rgb(255, 255, 255);
+}
+
+.contact .icons-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.contact .icons-container .icons {
+    flex: 1 1 25rem;
+    text-align: center;
+    padding: 2rem;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.contact .icons-container .icons i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--main-color);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.contact .icons-container .icons h3 {
+    color: rgb(17, 17, 17);
+    font-size: 2rem;
+    padding: 1rem 0px 0.5rem;
+}
+
+.contact .icons-container .icons p {
+    color: rgb(102, 102, 102);
+    font-size: 1.7rem;
+    text-transform: lowercase;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact .row form {
+    flex: 1 1 55rem;
+    background: rgb(255, 255, 255);
+    padding: 0px 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.contact .row .map {
+    flex: 1 1 25rem;
+    border: 1rem solid rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0.5rem 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.contact .row form .box,
+.contact .row form textarea {
+    width: 100%;
+    border-bottom: 0.1rem solid rgb(51, 51, 51);
+    color: rgb(51, 51, 51);
+    text-transform: none;
+    font-size: 1.7rem;
+    padding: 1rem 0px;
+    margin: 1rem 0px;
+}
+
+.contact .row form .box:focus,
+.contact .row form textarea:focus {
+    border-color: var(--main-color);
+}
+
+.contact .row form .box::placeholder,
+.contact .row form textarea::placeholder {
+    text-transform: capitalize;
+}
+
+.contact .row form textarea {
+    height: 10rem;
+    resize: none;
+}
+
+.contact .row form .btn {
+    margin-top: 0px;
+    margin-bottom: 1.5rem;
+}
+
+.footer {
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 2.5rem;
+    text-align: center;
+    color: rgb(102, 102, 102);
+    background: rgb(255, 255, 255);
+}
+
+.footer span {
+    color: var(--main-color);
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    body {
+        padding: 0px;
+    }
+
+    #menu-bars {
+        display: initial;
+    }
+
+    header {
+        left: -120%;
+    }
+
+    header.active {
+        left: 0%;
+    }
+
+    .cursor-1,
+    .cursor-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .experience .box-container .box {
+        padding-right: 0px;
+    }
+}
+
+#Skills > h1 {
+    margin-left: 70px;
+}
+
+.others {
+	width: 100%;
+	background-color: #29bdd7;
+	text-align: center;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: ;
+}
+
+.others h1 {
+    font-size: 55px;
+    color: white;
+}
+
+.others button {
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-radius: 3px;
+    background-color: coral;
+    letter-spacing: 1px;
+    color: white;
+}
+input[type="text"], input[type="email"], input[type="number"] {
+    height: 50px;
+}
+.contact .row form textarea {
+    height: 6rem;
+    resize: none;
+}
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#left-contact {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    flex-direction: column;
+}
+
+.gaming-channel {
+    width: 400px;
+    height: 400px;
+    background-image: url(Images/gaming\ channel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 2px 4px 6px 0px #333333;
+}
+.footer{
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding:2.5rem;
+    text-align: center;
+    color:#666;
+    background: rgb(255, 236, 187);
+}
+
+.footer span{
+    color:var(--main-color);
+}
